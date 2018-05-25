@@ -24,7 +24,7 @@ public class ManterProfessorBanco implements FacadeManterProfessorDataAccessObje
         preparedStatement.setString(3,professorTO.getTitulo());
         preparedStatement.execute();
         preparedStatement.close();
-        connection.close();
+
     }
 
     @Override
@@ -44,7 +44,7 @@ public class ManterProfessorBanco implements FacadeManterProfessorDataAccessObje
         }
 
         preparedStatement.close();
-        connection.close();
+
         return professorTransferObject;
 
     }
@@ -66,7 +66,7 @@ public class ManterProfessorBanco implements FacadeManterProfessorDataAccessObje
         }
 
         preparedStatement.close();
-        connection.close();
+
         return professorTransferObject;
     }
 }

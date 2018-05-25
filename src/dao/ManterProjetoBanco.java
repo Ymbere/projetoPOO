@@ -26,7 +26,7 @@ public class ManterProjetoBanco implements FacadeManterProjetoDataAccessObject {
         preparedStatement.setString(4,projetoTO.getOrientado().getRg());
         preparedStatement.execute();
         preparedStatement.close();
-        connection.close();
+
     }
 
     @Override
@@ -39,7 +39,7 @@ public class ManterProjetoBanco implements FacadeManterProjetoDataAccessObject {
         preparedStatement.setString(1,nomeProjeto);
         preparedStatement.execute();
         preparedStatement.close();
-        connection.close();
+
     }
 
     @Override
@@ -57,7 +57,7 @@ public class ManterProjetoBanco implements FacadeManterProjetoDataAccessObject {
         preparedStatement.setString(5,nomeProjeto);
         preparedStatement.execute();
         preparedStatement.close();
-        connection.close();
+
     }
 
     @Override
@@ -81,7 +81,7 @@ public class ManterProjetoBanco implements FacadeManterProjetoDataAccessObject {
         }
 
         preparedStatement.close();
-        connection.close();
+
         return projetoTransferObject;
     }
 
@@ -106,7 +106,7 @@ public class ManterProjetoBanco implements FacadeManterProjetoDataAccessObject {
         }
 
         preparedStatement.close();
-        connection.close();
+
         return projetoTransferObjects;
     }
 }

@@ -23,7 +23,7 @@ public class ManterAlunoBanco implements FacadeManterAlunoDataAccessObject {
         preparedStatement.setString(2,alunoTO.getRg());
         preparedStatement.execute();
         preparedStatement.close();
-        connection.close();
+
     }
 
     @Override
@@ -42,7 +42,7 @@ public class ManterAlunoBanco implements FacadeManterAlunoDataAccessObject {
         }
 
         preparedStatement.close();
-        connection.close();
+
         return alunoTransferObject;
 
     }
@@ -63,7 +63,7 @@ public class ManterAlunoBanco implements FacadeManterAlunoDataAccessObject {
         }
 
         preparedStatement.close();
-        connection.close();
+
         return alunoTransferObject;
     }
 }
