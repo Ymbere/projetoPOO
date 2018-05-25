@@ -1,8 +1,7 @@
 package view;
 
 import to.AlunoTransferObject;
-
-import java.sql.SQLOutput;
+;
 import java.util.Scanner;
 
 public class ManterAluno {

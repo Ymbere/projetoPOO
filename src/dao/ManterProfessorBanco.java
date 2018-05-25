@@ -69,4 +69,32 @@ public class ManterProfessorBanco implements FacadeManterProfessorDataAccessObje
 
         return professorTransferObject;
     }
+
+    @Override
+    public void deletaProfessor(String rg_professor) throws SQLException {
+        Connection connection = conexaoBanco.getConnection();
+        ProfessorTransferObject professorTransferObject = new ProfessorTransferObject();
+        String sql;
+        sql = "DELETE FROM professor WHERE rg = ?";
+        PreparedStatement preparedStatement;
+        preparedStatement = connection.prepareStatement(sql);
+        preparedStatement.setString(1,rg_professor);
+        preparedStatement.execute();
+        preparedStatement.close();
+    }
+
+    @Override
+    public void atualizaProfessor(String rg_professor, ProfessorTransferObject professorTO) throws SQLException {
+        Connection connection = conexaoBanco.getConnection();
+        String sql;
+        sql = "UPDATE professor SET nome= ?, titulo= ? WHERE rg = ?";
+        PreparedStatement preparedStatement;
+        preparedStatement = connection.prepareStatement(sql);
+        preparedStatement.setString(1,professorTO.getNome());
+        preparedStatement.setString(2,professorTO.getTitulo());
+        preparedStatement.setString(3,rg_professor);
+        preparedStatement.execute();
+        preparedStatement.close();
+
+    }
 }

@@ -8,4 +8,10 @@ public interface FacadeProfessorController {
 
     ProfessorTransferObject retornaProfessor(String nomeProfessor);
 
+    ProfessorTransferObject retornaPorRg(String rg_professor);
+
+    void editaProfessor(String rg_professor, ProfessorTransferObject professorTO);
+
+    void deletaProfessor(String rg_professor);
+
 }

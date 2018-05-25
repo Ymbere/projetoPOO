@@ -20,6 +20,7 @@ public class ProvaMurakami {
         int opcao;
         ManterProjeto projeto = new ManterProjeto();
         ManterAluno aluno = new ManterAluno();
+        ManterProfessor professor = new ManterProfessor();
 
         FacadeProfessorController manterProfessorController = new ManterProfessorController();
 
@@ -43,7 +44,11 @@ public class ProvaMurakami {
             System.out.println("6 - Retornar Aluno");
             System.out.println("7 - Atualizar Aluno");
             System.out.println("8 - Deletar Aluno");
-            System.out.println("9 - Sair");
+            System.out.println("9 - Cadastrar Professor");
+            System.out.println("10 - Retornar Professor");
+            System.out.println("11 - Atualizar Professor");
+            System.out.println("12 - Deletar Professor");
+            System.out.println("13 - Sair");
             opcao = ler.nextInt();
             switch (opcao){
                 case 1:
@@ -70,8 +75,20 @@ public class ProvaMurakami {
                 case 8:
                     aluno.deletaAluno(manterAlunoController);
                     break;
+                case 9:
+                    professor.cadastraProfessor(manterProfessorController);
+                    break;
+                case 10:
+                    professor.retornaProfessor(manterProfessorController);
+                    break;
+                case 11:
+                    professor.editaProfessor(manterProfessorController);
+                    break;
+                case 12:
+                    professor.deletaProfessor(manterProfessorController);
+                    break;
             }
-        }while (opcao != 9);
+        }while (opcao != 13);
 
 
     }

@@ -45,4 +45,14 @@ public class ManterProfessorDataAccessObject implements FacadeManterProfessorDat
 
     }
 
+    @Override
+    public void deletaProfessor(String rg_professor) throws SQLException {
+
+    }
+
+    @Override
+    public void atualizaProfessor(String rg_professor, ProfessorTransferObject professorTO) throws SQLException {
+
+    }
+
 }

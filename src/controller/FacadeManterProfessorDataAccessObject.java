@@ -13,4 +13,8 @@ public interface FacadeManterProfessorDataAccessObject {
 
     ProfessorTransferObject retornaPorRg(String rg) throws SQLException;
 
+    void deletaProfessor(String rg_professor) throws SQLException;
+
+    void atualizaProfessor(String rg_professor, ProfessorTransferObject professorTO) throws SQLException;
+
 }
