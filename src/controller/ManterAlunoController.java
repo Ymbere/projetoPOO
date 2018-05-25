@@ -30,4 +30,32 @@ public class ManterAlunoController implements FacadeAlunoController {
         }
         return null;
     }
+
+    @Override
+    public void deletar_aluno(String rg_aluno) {
+        try {
+            dao.deletarAluno(rg_aluno);
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void editar_aluno(String rg, AlunoTransferObject alunoTO) {
+        try{
+            dao.atualizarAluno(rg, alunoTO);
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public AlunoTransferObject retorna_por_rg(String rg_aluno) {
+        try{
+            return dao.retornaPorRg(rg_aluno);
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return null;
+    }
 }

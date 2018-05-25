@@ -19,6 +19,7 @@ public class ProvaMurakami {
         Scanner ler = new Scanner(System.in);
         int opcao;
         ManterProjeto projeto = new ManterProjeto();
+        ManterAluno aluno = new ManterAluno();
 
         FacadeProfessorController manterProfessorController = new ManterProfessorController();
 
@@ -38,7 +39,11 @@ public class ProvaMurakami {
             System.out.println("2 - Retornar Projetos");
             System.out.println("3 - Atualizar projeto");
             System.out.println("4 - Deletar Projeto");
-            System.out.println("5 - Sair");
+            System.out.println("5 - Cadastrar Aluno");
+            System.out.println("6 - Retornar Aluno");
+            System.out.println("7 - Atualizar Aluno");
+            System.out.println("8 - Deletar Aluno");
+            System.out.println("9 - Sair");
             opcao = ler.nextInt();
             switch (opcao){
                 case 1:
@@ -53,8 +58,20 @@ public class ProvaMurakami {
                 case 4:
                     projeto.deletaProjeto(manterProjetoController);
                     break;
+                case 5:
+                    aluno.cadastraAluno(manterAlunoController);
+                    break;
+                case 6:
+                    aluno.retornaAluno(manterAlunoController);
+                    break;
+                case 7:
+                    aluno.editaAluno(manterAlunoController);
+                    break;
+                case 8:
+                    aluno.deletaAluno(manterAlunoController);
+                    break;
             }
-        }while (opcao != 5);
+        }while (opcao != 9);
 
 
     }

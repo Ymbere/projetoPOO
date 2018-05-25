@@ -66,4 +66,31 @@ public class ManterAlunoBanco implements FacadeManterAlunoDataAccessObject {
 
         return alunoTransferObject;
     }
+
+    @Override
+    public void deletarAluno(String rg_aluno) throws SQLException {
+        Connection connection = conexaoBanco.getConnection();
+        String sql;
+        sql ="DELETE FROM aluno WHERE rg = ?";
+        PreparedStatement preparedStatement;
+        preparedStatement = connection.prepareStatement(sql);
+        preparedStatement.setString(1,rg_aluno);
+        preparedStatement.execute();
+        preparedStatement.close();
+
+    }
+
+    @Override
+    public void atualizarAluno(String rg_aluno, AlunoTransferObject alunoTO) throws SQLException {
+        Connection connection = conexaoBanco.getConnection();
+        String sql;
+        sql = "UPDATE aluno SET nome= ? WHERE rg = ?";
+        PreparedStatement preparedStatement;
+        preparedStatement = connection.prepareStatement(sql);
+        preparedStatement.setString(1,alunoTO.getNome());
+        preparedStatement.setString(2,rg_aluno);
+        preparedStatement.execute();
+        preparedStatement.close();
+
+    }
 }

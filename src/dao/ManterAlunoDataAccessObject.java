@@ -45,4 +45,14 @@ public class ManterAlunoDataAccessObject implements FacadeManterAlunoDataAccessO
 
     }
 
+    @Override
+    public void deletarAluno(String rg_aluno) throws SQLException {
+
+    }
+
+    @Override
+    public void atualizarAluno(String rg_aluno, AlunoTransferObject alunoTO) throws SQLException {
+
+    }
+
 }
