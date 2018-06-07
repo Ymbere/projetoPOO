@@ -61,7 +61,7 @@ public class ProvaMurakami {
                     projeto.atualizaProjeto();
                     break;
                 case 4:
-                    projeto.deletaProjeto(manterProjetoController);
+                    projeto.deletaProjeto();
                     break;
                 case 5:
                     aluno.cadastraAluno(manterAlunoController);

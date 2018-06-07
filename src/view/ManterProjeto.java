@@ -136,7 +136,10 @@ class ManterProjeto {
 
     }
 
-    void deletaProjeto(FacadeProjetoController manterProjetoController){
+    void deletaProjeto(){
+
+        FacadeProjetoController manterProjetoController = new ManterProjetoController();
+
         String titulo;
         System.out.println("Digite o titulo do projeto que deseja deletar");
         titulo = ler.nextLine();
