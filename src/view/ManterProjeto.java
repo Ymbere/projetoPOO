@@ -42,7 +42,10 @@ class ManterProjeto {
 
     }
 
-    void retornarProjeto(FacadeProjetoController manterProjetoController){
+    void retornarProjeto(){
+
+        FacadeProjetoController manterProjetoController = new ManterProjetoController();
+
         System.out.println("$$$$$$$$$$$$$$$$$$$ Relatorio de projetos $$$$$$$$$$$$$$$$$$$");
 
         int projetosSize = manterProjetoController.ordenaERetorna().size();
