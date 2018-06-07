@@ -52,7 +52,7 @@ public class ProvaMurakami {
             opcao = ler.nextInt();
             switch (opcao){
                 case 1:
-                    projeto.cadastrarProjeto(manterAlunoController, manterProfessorController, manterProjetoController);
+                    projeto.cadastrarProjeto();
                     break;
                 case 2:
                     projeto.retornarProjeto(manterProjetoController);

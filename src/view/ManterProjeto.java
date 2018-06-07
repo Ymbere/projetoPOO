@@ -1,5 +1,8 @@
 package view;
 
+import controller.ManterAlunoController;
+import controller.ManterProfessorController;
+import controller.ManterProjetoController;
 import to.ProjetoTransferObject;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -7,8 +10,15 @@ import java.util.Scanner;
 class ManterProjeto {
     private Scanner ler = new Scanner(System.in);
 
-    void cadastrarProjeto(FacadeAlunoController alunoController, FacadeProfessorController professorController,
-                          FacadeProjetoController manterProjetoController){
+    void cadastrarProjeto(){
+
+        FacadeProfessorController professorController = new ManterProfessorController();
+
+        FacadeAlunoController alunoController = new ManterAlunoController();
+
+        FacadeProjetoController manterProjetoController = new ManterProjetoController();
+
+
         String projeoTitulo;
         String resumo;
         String orientador;
