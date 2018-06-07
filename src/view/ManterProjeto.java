@@ -96,9 +96,16 @@ class ManterProjeto {
         }
     }
 
-    void atualizaProjeto(FacadeProjetoController manterProjetoController,
-                         FacadeProfessorController professorController,
-                         FacadeAlunoController alunoController){
+    void atualizaProjeto(){
+
+        FacadeProfessorController professorController = new ManterProfessorController();
+
+        FacadeAlunoController alunoController = new ManterAlunoController();
+
+        FacadeProjetoController manterProjetoController = new ManterProjetoController();
+
+
+
         String titulo;
         String projeoTitulo;
         String resumo;

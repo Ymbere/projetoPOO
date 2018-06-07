@@ -58,7 +58,7 @@ public class ProvaMurakami {
                     projeto.retornarProjeto();
                     break;
                 case 3:
-                    projeto.atualizaProjeto(manterProjetoController, manterProfessorController, manterAlunoController);
+                    projeto.atualizaProjeto();
                     break;
                 case 4:
                     projeto.deletaProjeto(manterProjetoController);
