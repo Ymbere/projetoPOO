@@ -64,16 +64,16 @@ public class ProvaMurakami {
                     projeto.deletaProjeto();
                     break;
                 case 5:
-                    aluno.cadastraAluno(manterAlunoController);
+                    aluno.cadastraAluno();
                     break;
                 case 6:
-                    aluno.retornaAluno(manterAlunoController);
+                    aluno.retornaAluno();
                     break;
                 case 7:
-                    aluno.editaAluno(manterAlunoController);
+                    aluno.editaAluno();
                     break;
                 case 8:
-                    aluno.deletaAluno(manterAlunoController);
+                    aluno.deletaAluno();
                     break;
                 case 9:
                     professor.cadastraProfessor(manterProfessorController);
