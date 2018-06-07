@@ -1,13 +1,17 @@
 package view;
 
+import controller.ManterProfessorController;
 import to.ProfessorTransferObject;
 
 import java.util.Scanner;
 
-public class ManterProfessor {
+class ManterProfessor {
     private Scanner ler = new Scanner(System.in);
 
-    void cadastraProfessor(FacadeProfessorController professorController){
+    void cadastraProfessor(){
+
+        FacadeProfessorController professorController = new ManterProfessorController();
+
         String nome;
         String rg;
         String titulo;
@@ -27,7 +31,10 @@ public class ManterProfessor {
 
     }
 
-    void retornaProfessor(FacadeProfessorController professorController){
+    void retornaProfessor(){
+
+        FacadeProfessorController professorController = new ManterProfessorController();
+
         String nome;
         System.out.println("Digite o nome do aluno que deseja retornar");
         nome = ler.nextLine();
@@ -41,7 +48,10 @@ public class ManterProfessor {
 
     }
 
-    void editaProfessor(FacadeProfessorController professorController){
+    void editaProfessor(){
+
+        FacadeProfessorController professorController = new ManterProfessorController();
+
         String rg;
         String novo_nome;
         String titulo;
@@ -65,7 +75,10 @@ public class ManterProfessor {
 
     }
 
-    void deletaProfessor(FacadeProfessorController professorController){
+    void deletaProfessor(){
+
+        FacadeProfessorController professorController = new ManterProfessorController();
+
         String rg;
         System.out.println("Digite o RG do professor que deseja deletar");
         rg = ler.nextLine();

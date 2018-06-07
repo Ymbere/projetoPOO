@@ -76,16 +76,16 @@ public class ProvaMurakami {
                     aluno.deletaAluno();
                     break;
                 case 9:
-                    professor.cadastraProfessor(manterProfessorController);
+                    professor.cadastraProfessor();
                     break;
                 case 10:
-                    professor.retornaProfessor(manterProfessorController);
+                    professor.retornaProfessor();
                     break;
                 case 11:
-                    professor.editaProfessor(manterProfessorController);
+                    professor.editaProfessor();
                     break;
                 case 12:
-                    professor.deletaProfessor(manterProfessorController);
+                    professor.deletaProfessor();
                     break;
             }
         }while (opcao != 13);
