@@ -8,6 +8,7 @@ import populabanco.*;
 
 
 import java.util.Scanner;
+import view_grafica.Menu_principal;
 
 public class ProvaMurakami {
 
@@ -15,7 +16,11 @@ public class ProvaMurakami {
 
     public static void main(String[] args){
         //Tudo o que vier aqui é dependencia
-
+        
+        Menu_principal menu = new Menu_principal();
+        menu.setVisible(true);
+        menu.setDefaultCloseOperation(menu.EXIT_ON_CLOSE);   
+/*
         Scanner ler = new Scanner(System.in);
         int opcao;
         ManterProjeto projeto = new ManterProjeto();
@@ -90,6 +95,6 @@ public class ProvaMurakami {
             }
         }while (opcao != 13);
 
-
+*/
     }
 }

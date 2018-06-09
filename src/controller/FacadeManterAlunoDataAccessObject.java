@@ -3,6 +3,7 @@ package controller;
 import to.AlunoTransferObject;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public interface FacadeManterAlunoDataAccessObject {
 
@@ -15,4 +16,6 @@ public interface FacadeManterAlunoDataAccessObject {
     void deletarAluno(String rg_aluno) throws SQLException;
 
     void atualizarAluno(String rg_aluno, AlunoTransferObject alunoTO) throws SQLException;
+    
+    ArrayList<AlunoTransferObject> retornaAlunos() throws SQLException;
 }

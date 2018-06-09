@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class ManterAlunoBanco implements FacadeManterAlunoDataAccessObject {
 
@@ -92,5 +93,28 @@ public class ManterAlunoBanco implements FacadeManterAlunoDataAccessObject {
         preparedStatement.execute();
         preparedStatement.close();
 
+    }
+
+    @Override
+    public ArrayList<AlunoTransferObject> retornaAlunos() throws SQLException {
+        Connection connection = conexaoBanco.getConnection();
+        String sql;
+        sql = "SELECT * FROM aluno ORDER BY rg ASC;";
+        PreparedStatement preparedStatement;
+        preparedStatement = connection.prepareStatement(sql);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        ArrayList<AlunoTransferObject> alunoTransferObjects = new ArrayList<>();
+        
+        while (resultSet.next()) {
+            AlunoTransferObject alunoTransferObject = new AlunoTransferObject();
+            alunoTransferObject.setNome(resultSet.getString("nome"));
+            alunoTransferObject.setRg(resultSet.getString("rg"));
+            alunoTransferObjects.add(alunoTransferObject);            
+        }
+        
+        preparedStatement.close();
+        
+        return alunoTransferObjects;
+        
     }
 }

@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecd3bccb-2087-46df-9817-095d1cf5cf4d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="ecd3bccb-2087-46df-9817-095d1cf5cf4d" name="Default" comment="Removed controller of the main class and add it to the specific method, all aluno files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProvaMurakami/controller/FacadeManterProfessorDataAccessObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProvaMurakami/controller/FacadeManterProfessorDataAccessObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProvaMurakami/controller/ManterProfessorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProvaMurakami/controller/ManterProfessorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProvaMurakami/dao/ManterProfessorDataAccessObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProvaMurakami/dao/ManterProfessorDataAccessObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProvaMurakami/view/FacadeProfessorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProvaMurakami/view/FacadeProfessorController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ManterProjeto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ManterProjeto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ProvaMurakami.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ProvaMurakami.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProvaMurakami/view/ManterProjeto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProvaMurakami/view/ManterProjeto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProvaMurakami/view/ProvaMurakami.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProvaMurakami/view/ProvaMurakami.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,11 +52,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ManterProjeto.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ManterProfessor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/ManterProfessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ManterProjeto.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/ManterProjeto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+            <state relative-caret-position="2070">
+              <caret line="138" column="23" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,23 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ManterProfessor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/ManterProfessor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProvaMurakami.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProvaMurakami.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/view/ProvaMurakami.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="54" lean-forward="true" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+            <state relative-caret-position="1305">
+              <caret line="87" column="46" selection-start-line="87" selection-start-column="46" selection-end-line="87" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConexaoBanco.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/ConexaoBanco.java">
+      <file leaf-file-name="ManterAluno.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/ManterAluno.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            <state relative-caret-position="-45">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,16 +118,9 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ManterProfessorController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/ManterProfessorController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="ManterAlunoController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/controller/ManterAlunoController.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -207,15 +195,15 @@
         <option value="$PROJECT_DIR$/src/dao/ManterAlunoBanco.java" />
         <option value="$PROJECT_DIR$/src/view/FacadeProfessorController.java" />
         <option value="$PROJECT_DIR$/src/controller/FacadeManterProfessorDataAccessObject.java" />
-        <option value="$PROJECT_DIR$/src/view/ManterAluno.java" />
         <option value="$PROJECT_DIR$/src/controller/ManterProfessorController.java" />
         <option value="$PROJECT_DIR$/src/dao/ManterProfessorDataAccessObject.java" />
-        <option value="$PROJECT_DIR$/src/view/ManterProfessor.java" />
         <option value="$PROJECT_DIR$/src/dao/ManterProfessorBanco.java" />
         <option value="$PROJECT_DIR$/src/view/teste.form" />
         <option value="$PROJECT_DIR$/src/view/PaginaPrincipal.form" />
-        <option value="$PROJECT_DIR$/src/view/ProvaMurakami.java" />
         <option value="$PROJECT_DIR$/src/view/ManterProjeto.java" />
+        <option value="$PROJECT_DIR$/src/view/ManterAluno.java" />
+        <option value="$PROJECT_DIR$/src/view/ManterProfessor.java" />
+        <option value="$PROJECT_DIR$/src/view/ProvaMurakami.java" />
       </list>
     </option>
   </component>
@@ -286,7 +274,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Manter&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/view/ManterProjeto.java&#10;Prov&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/view/ProvaMurakami.java&#10;ManterProfessor&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/view/ManterProfessor.java&#10;ManterProf&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/controller/FacadeManterProfessorDataAccessObject.java&#10;Facadeprofe&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/view/FacadeProfessorController.java&#10;FacadeMAnte&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/controller/FacadeManterProfessorDataAccessObject.java&#10;ManterProfessorBan&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/dao/ManterProfessorBanco.java&#10;Prova&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/view/ProvaMurakami.java&#10;Proa&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/controller/FacadeManterProfessorDataAccessObject.java&#10;ManterAlunoBAnc&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/dao/ManterAlunoBanco.java&#10;ManterP&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/dao/ManterProjetoBanco.java&#10;ManterPro&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/dao/ManterProjetoBanco.java&#10;ManterProjeto&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/dao/ManterProjetoBanco.java&#10;manterprofe&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/dao/ManterProfessorBanco.java&#10;ManterProjetoBa&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/dao/ManterProjetoBanco.java&#10;FacademanterProf&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/controller/FacadeManterProfessorDataAccessObject.java&#10;FacadeManterAluno&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/controller/FacadeManterAlunoDataAccessObject.java&#10;FacadeMante&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/controller/FacadeManterProjetoDataAccessObject.java&#10;ManterAluno&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/dao/ManterAlunoBanco.java&#10;ManterProjet&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/dao/ManterProjetoBanco.java&#10;Facade&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/controller/FacadeManterProfessorDataAccessObject.java&#10;manter&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/view/ManterProjeto.java&#10;pro&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProfessor.java&#10;popula&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaAluno.java&#10;popu&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProjetoTeste.java&#10;al&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaAluno.java&#10;po&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProfessor.java&#10;PopulaA&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaAluno.java&#10;PopulaProfessor&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProfessor.java&#10;Popu&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProfessor.java&#10;pop&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaAluno.java&#10;popula P&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProfessor.java&#10;populap&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProjetoTeste.java&#10;mante&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/view/ManterProjeto.java&#10;populaA&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaAluno.java&#10;popuP&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProfessor.java&#10;man&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/view/ManterProjeto.java&#10;popua&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaAluno.java&#10;alu&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaAluno.java&#10;manterP&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/view/ManterProjeto.java&#10;view&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/view&#10;popa&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaAluno.java&#10;popup&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProfessor.java&#10;popul&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaAluno.java&#10;Popula&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProjetoTeste.java&#10;PopulaPro&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProfessor.java&#10;PopulaP&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProjetoTeste.java&#10;PopulaProfe&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProfessor.java" />
+    <property name="SearchEverywhereHistoryKey" value="ManterProfessor&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/view/ManterProfessor.java&#10;Prova&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/view/ProvaMurakami.java&#10;ManterAluno&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/view/ManterAluno.java&#10;ManterAlunoCon&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/controller/ManterAlunoController.java&#10;Manter&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/view/ManterProjeto.java&#10;Prov&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/view/ProvaMurakami.java&#10;ManterProf&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/controller/FacadeManterProfessorDataAccessObject.java&#10;Facadeprofe&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/view/FacadeProfessorController.java&#10;FacadeMAnte&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/controller/FacadeManterProfessorDataAccessObject.java&#10;ManterProfessorBan&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/dao/ManterProfessorBanco.java&#10;Proa&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/controller/FacadeManterProfessorDataAccessObject.java&#10;ManterAlunoBAnc&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/dao/ManterAlunoBanco.java&#10;ManterP&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/dao/ManterProjetoBanco.java&#10;ManterPro&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/dao/ManterProjetoBanco.java&#10;ManterProjeto&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/dao/ManterProjetoBanco.java&#10;manterprofe&#9;FILE&#9;file:///home/ymbere/IdeaProjects/ProvaMurakami/src/dao/ManterProfessorBanco.java&#10;ManterProjetoBa&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/dao/ManterProjetoBanco.java&#10;FacademanterProf&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/controller/FacadeManterProfessorDataAccessObject.java&#10;FacadeManterAluno&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/controller/FacadeManterAlunoDataAccessObject.java&#10;FacadeMante&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/controller/FacadeManterProjetoDataAccessObject.java&#10;ManterProjet&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/dao/ManterProjetoBanco.java&#10;Facade&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/controller/FacadeManterProfessorDataAccessObject.java&#10;manter&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/view/ManterProjeto.java&#10;pro&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProfessor.java&#10;popula&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaAluno.java&#10;popu&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProjetoTeste.java&#10;al&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaAluno.java&#10;po&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProfessor.java&#10;PopulaA&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaAluno.java&#10;PopulaProfessor&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProfessor.java&#10;Popu&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProfessor.java&#10;pop&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaAluno.java&#10;popula P&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProfessor.java&#10;populap&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProjetoTeste.java&#10;mante&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/view/ManterProjeto.java&#10;populaA&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaAluno.java&#10;popuP&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProfessor.java&#10;man&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/view/ManterProjeto.java&#10;popua&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaAluno.java&#10;alu&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaAluno.java&#10;manterP&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/view/ManterProjeto.java&#10;view&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/view&#10;popa&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaAluno.java&#10;popup&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProfessor.java&#10;popul&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaAluno.java&#10;Popula&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProjetoTeste.java&#10;PopulaPro&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProfessor.java&#10;PopulaP&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProjetoTeste.java&#10;PopulaProfe&#9;FILE&#9;file://C:/Users/ymber/IdeaProjects/ProvaMurakami/src/provamurakami/PopulaProfessor.java" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -401,12 +389,60 @@
       <option name="project" value="LOCAL" />
       <updated>1527217522933</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added new snippet's to avoid error message">
+      <created>1528379345608</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1528379345608</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Removed controller attribute in the main class, added it to the specif method that use it">
+      <created>1528379439825</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1528379439825</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Removed controller attribute in the main class, added it to the specif method that use it, retorna Projeto">
+      <created>1528379587515</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1528379587515</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Removed controller attribute in the main class, added it to the specif method that use it, atualizar projeto">
+      <created>1528379750349</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1528379750349</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Removed controller attribute in the main class, added it to the specif method that use it, deletar projeto">
+      <created>1528379831995</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1528379831995</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Removed controller of the main class and add it to the specific method, all aluno files">
+      <created>1528380263761</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1528380263761</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Removed controller of the main class and add it to the specific method, all professor files">
+      <created>1528380440514</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1528380440514</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -421,7 +457,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32962137" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29775882" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29775882" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24966443" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -444,20 +480,27 @@
     <MESSAGE value="Removed connection close" />
     <MESSAGE value="Finished CRUD for aluno" />
     <MESSAGE value="Finished CRUD for professor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished CRUD for professor" />
+    <MESSAGE value="Added new snippet's to avoid error message" />
+    <MESSAGE value="Removed controller attribute in the main class, added it to the specif method that use it" />
+    <MESSAGE value="Removed controller attribute in the main class, added it to the specif method that use it, retorna Projeto" />
+    <MESSAGE value="Removed controller attribute in the main class, added it to the specif method that use it, atualizar projeto" />
+    <MESSAGE value="Removed controller attribute in the main class, added it to the specif method that use it, deletar projeto" />
+    <MESSAGE value="Removed controller of the main class and add it to the specific method, all aluno files" />
+    <MESSAGE value="Removed controller of the main class and add it to the specific method, all professor files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed controller of the main class and add it to the specific method, all professor files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/view/ManterAluno.java</url>
-          <line>45</line>
+          <line>54</line>
           <properties />
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/view/ManterProfessor.java</url>
-          <line>63</line>
+          <line>73</line>
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
@@ -667,13 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/ManterAlunoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/FacadeManterAlunoDataAccessObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -688,16 +724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/ManterAluno.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" selection-start-line="7" selection-end-line="64" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -722,16 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/ManterProfessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -810,20 +826,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/ProvaMurakami.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/ManterAlunoController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/ManterProjeto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="54" lean-forward="true" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+        <state relative-caret-position="2070">
+          <caret line="138" column="23" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/ManterProjeto.java">
+    <entry file="file://$PROJECT_DIR$/src/view/ManterAluno.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+        <state relative-caret-position="-45">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/ManterProfessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/ProvaMurakami.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="87" column="46" selection-start-line="87" selection-start-column="46" selection-end-line="87" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
