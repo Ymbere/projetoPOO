@@ -55,4 +55,9 @@ public class ManterProfessorDataAccessObject implements FacadeManterProfessorDat
 
     }
 
+    @Override
+    public ArrayList<ProfessorTransferObject> retornaProfessores() throws SQLException {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

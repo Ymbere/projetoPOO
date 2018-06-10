@@ -36,7 +36,7 @@ public class Crud_aluno extends javax.swing.JFrame {
             
         }
     }
-
+         
     /**
      * Creates new form Crud_aluno
      */
@@ -66,7 +66,12 @@ public class Crud_aluno extends javax.swing.JFrame {
         lbl_nome = new javax.swing.JLabel();
         txt_rg = new javax.swing.JTextField();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
+            }
+        });
 
         table_aluno.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -249,6 +254,13 @@ public class Crud_aluno extends javax.swing.JFrame {
 
        
     }//GEN-LAST:event_btn_inserirLinhaActionPerformed
+
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        // TODO add your handling code here:
+        Menu_principal menu = new Menu_principal();
+        menu.setVisible(true);                   
+        System.out.println("Fechando");
+    }//GEN-LAST:event_formWindowClosing
 
     /**
      * @param args the command line arguments

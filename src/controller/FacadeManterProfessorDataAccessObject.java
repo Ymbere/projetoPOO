@@ -4,6 +4,8 @@ package controller;
 import to.ProfessorTransferObject;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
+
 
 public interface FacadeManterProfessorDataAccessObject {
 
@@ -16,5 +18,7 @@ public interface FacadeManterProfessorDataAccessObject {
     void deletaProfessor(String rg_professor) throws SQLException;
 
     void atualizaProfessor(String rg_professor, ProfessorTransferObject professorTO) throws SQLException;
+    
+    ArrayList<ProfessorTransferObject> retornaProfessores() throws SQLException;
 
 }

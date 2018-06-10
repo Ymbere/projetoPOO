@@ -27,16 +27,16 @@ public class Menu_principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        btn_professor = new javax.swing.JButton();
         btn_Aluno = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btn_projeto = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("Professor");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btn_professor.setText("Professor");
+        btn_professor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btn_professorActionPerformed(evt);
             }
         });
 
@@ -47,7 +47,12 @@ public class Menu_principal extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("Projeto");
+        btn_projeto.setText("Projeto");
+        btn_projeto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_projetoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -56,29 +61,33 @@ public class Menu_principal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(160, 160, 160)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_professor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btn_Aluno, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btn_projeto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(172, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(65, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(btn_professor)
                 .addGap(47, 47, 47)
                 .addComponent(btn_Aluno)
                 .addGap(42, 42, 42)
-                .addComponent(jButton3)
+                .addComponent(btn_projeto)
                 .addGap(53, 53, 53))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btn_professorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_professorActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        Crud_professor crud_professor = new Crud_professor();
+        
+        crud_professor.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btn_professorActionPerformed
 
     private void btn_AlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_AlunoActionPerformed
         // TODO add your handling code here:
@@ -88,6 +97,14 @@ public class Menu_principal extends javax.swing.JFrame {
         crud_aluno.setVisible(true);        
         dispose();
     }//GEN-LAST:event_btn_AlunoActionPerformed
+
+    private void btn_projetoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_projetoActionPerformed
+        // TODO add your handling code here:
+        Crud_projeto crud_projeto = new Crud_projeto();
+        
+        crud_projeto.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_btn_projetoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -127,7 +144,7 @@ public class Menu_principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btn_Aluno;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton btn_professor;
+    private javax.swing.JButton btn_projeto;
     // End of variables declaration//GEN-END:variables
 }

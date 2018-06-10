@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecd3bccb-2087-46df-9817-095d1cf5cf4d" name="Default" comment="Removed controller of the main class and add it to the specific method, all aluno files">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProvaMurakami/view/ManterProjeto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProvaMurakami/view/ManterProjeto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProvaMurakami/view/ProvaMurakami.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProvaMurakami/view/ProvaMurakami.class" afterDir="false" />
-    </list>
+    <list default="true" id="ecd3bccb-2087-46df-9817-095d1cf5cf4d" name="Default" comment="Removed controller of the main class and add it to the specific method, all aluno files" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,32 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ManterAlunoBanco.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/ManterAlunoBanco.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
-              <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="92" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManterAlunoDataAccessObject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/ManterAlunoDataAccessObject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="53" column="84" selection-start-line="53" selection-start-column="84" selection-end-line="53" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ManterProfessorBanco.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/ManterProfessorBanco.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="72" lean-forward="true" selection-start-line="42" selection-start-column="72" selection-end-line="42" selection-end-column="72" />
+            <state relative-caret-position="540">
+              <caret line="42" column="72" selection-start-line="42" selection-start-column="72" selection-end-line="42" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,7 +30,7 @@
       <file leaf-file-name="ManterProfessor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/ManterProfessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="60">
               <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -67,7 +42,7 @@
       <file leaf-file-name="ManterProjeto.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/ManterProjeto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2070">
+            <state relative-caret-position="1995">
               <caret line="138" column="23" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -94,14 +69,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProvaMurakami.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProvaMurakami.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/ProvaMurakami.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1305">
-              <caret line="87" column="46" selection-start-line="87" selection-start-column="46" selection-end-line="87" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="638">
+              <caret line="92" column="46" selection-start-line="92" selection-start-column="46" selection-end-line="92" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Crud_aluno.form" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view_grafica/Crud_aluno.form">
+          <provider selected="true" editor-type-id="ui-designer" />
+        </entry>
+      </file>
+      <file leaf-file-name="Crud_aluno.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/view_grafica/Crud_aluno.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1342">
+              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -109,7 +95,7 @@
       <file leaf-file-name="ManterAluno.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/ManterAluno.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-45">
+            <state relative-caret-position="60">
               <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -218,6 +204,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -263,14 +251,18 @@
             </path>
             <path>
               <item name="ProvaMurakami" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProvaMurakami" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="view_grafica" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProvaMurakami" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -457,7 +449,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32962137" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29775882" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3009605" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24966443" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -527,23 +519,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/controller/ManterProfessorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/ProvaMurakami.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/ManterAlunoDataAccessObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -607,9 +582,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="26" column="55" lean-forward="true" selection-start-line="26" selection-start-column="55" selection-end-line="26" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -697,9 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -714,9 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="90" selection-start-line="16" selection-start-column="90" selection-end-line="16" selection-end-column="90" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -738,9 +704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -769,16 +732,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/ManterAlunoBanco.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="84" column="8" selection-start-line="84" selection-start-column="8" selection-end-line="92" selection-end-column="34" />
+        <state relative-caret-position="1185">
+          <caret line="85" column="8" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -792,20 +752,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/PaginaPrincipal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/PaginaPrincipal.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/PaginaPrincipal.java" />
+    <entry file="file://$PROJECT_DIR$/src/view/PaginaPrincipal.form" />
     <entry file="file://$PROJECT_DIR$/src/dao/ManterProfessorBanco.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="72" lean-forward="true" selection-start-line="42" selection-start-column="72" selection-end-line="42" selection-end-column="72" />
+        <state relative-caret-position="540">
+          <caret line="42" column="72" selection-start-line="42" selection-start-column="72" selection-end-line="42" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -831,7 +783,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/ManterProjeto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2070">
+        <state relative-caret-position="1995">
           <caret line="138" column="23" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -841,7 +793,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/ManterAluno.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
+        <state relative-caret-position="60">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -851,7 +803,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/ManterProfessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="60">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -861,11 +813,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/ProvaMurakami.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1305">
-          <caret line="87" column="46" selection-start-line="87" selection-start-column="46" selection-end-line="87" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="638">
+          <caret line="92" column="46" selection-start-line="92" selection-start-column="46" selection-end-line="92" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view_grafica/Crud_aluno.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view_grafica/Crud_aluno.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1342">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>

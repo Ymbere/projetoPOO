@@ -6,6 +6,7 @@ import to.ProfessorTransferObject;
 import view.FacadeProfessorController;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class ManterProfessorController implements FacadeProfessorController {
 
@@ -58,6 +59,17 @@ public class ManterProfessorController implements FacadeProfessorController {
             e.printStackTrace();
         }
 
+    }
+
+    @Override
+    public ArrayList<ProfessorTransferObject> retornaProfessores() {
+        try {
+            return dao.retornaProfessores();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        
+        return null;
     }
 
 }
