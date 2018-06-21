@@ -8,9 +8,7 @@ import java.util.Scanner;
 class ManterProfessor {
     private Scanner ler = new Scanner(System.in);
 
-    void cadastraProfessor(){
-
-        FacadeProfessorController professorController = new ManterProfessorController();
+    void cadastraProfessor(FacadeProfessorController professorController){
 
         String nome;
         String rg;
@@ -28,12 +26,10 @@ class ManterProfessor {
         professor.setTitulo(titulo);
 
         professorController.cadastratProfessor(professor);
-
     }
 
-    void retornaProfessor(){
+    void retornaProfessor(FacadeProfessorController professorController){
 
-        FacadeProfessorController professorController = new ManterProfessorController();
 
         String nome;
         System.out.println("Digite o nome do aluno que deseja retornar");
@@ -45,12 +41,10 @@ class ManterProfessor {
         System.out.println("Nome: " + professor_retornado.getNome());
         System.out.println("RG: " + professor_retornado.getRg());
         System.out.println("Titulo: " + professor_retornado.getTitulo());
-
     }
 
-    void editaProfessor(){
+    void editaProfessor(FacadeProfessorController professorController){
 
-        FacadeProfessorController professorController = new ManterProfessorController();
 
         String rg;
         String novo_nome;
@@ -72,12 +66,10 @@ class ManterProfessor {
         professor_atualizado.setRg(professor_retornado.getRg());
 
         professorController.editaProfessor(rg, professor_atualizado);
-
     }
 
-    void deletaProfessor(){
+    void deletaProfessor(FacadeProfessorController professorController){
 
-        FacadeProfessorController professorController = new ManterProfessorController();
 
         String rg;
         System.out.println("Digite o RG do professor que deseja deletar");

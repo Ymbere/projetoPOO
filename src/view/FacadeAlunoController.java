@@ -1,5 +1,6 @@
 package view;
 
+import java.util.ArrayList;
 import to.AlunoTransferObject;
 import to.ProjetoTransferObject;
 
@@ -14,5 +15,7 @@ public interface FacadeAlunoController {
     void editar_aluno(String rg, AlunoTransferObject alunoTO);
 
     AlunoTransferObject retorna_por_rg(String rg_aluno);
+    
+    ArrayList<AlunoTransferObject> retornaAlunos();
 
 }

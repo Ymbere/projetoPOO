@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class ManterProjetoController implements FacadeProjetoController {
 
-    private FacadeManterProjetoDataAccessObject dao = new ManterProjetoBanco();
+    private FacadeManterProjetoDataAccessObject dao = new ManterProjetoDataAccessObject();
 
     @Override
     public void cadastrarProjeto(ProjetoTransferObject projetoTO) {

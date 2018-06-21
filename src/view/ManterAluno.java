@@ -7,9 +7,8 @@ import java.util.Scanner;
 class ManterAluno {
     private Scanner ler = new Scanner(System.in);
 
-    void cadastraAluno(){
+    void cadastraAluno(FacadeAlunoController alunoController){
 
-        FacadeAlunoController alunoController = new ManterAlunoController();
 
         String nome;
         String rg;
@@ -23,12 +22,11 @@ class ManterAluno {
         aluno.setRg(rg);
 
         alunoController.cadastrar_aluno(aluno);
-
     }
 
-    void retornaAluno(){
+    void retornaAluno(FacadeAlunoController alunoController){
 
-        FacadeAlunoController alunoController = new ManterAlunoController();
+
 
         String nome;
         System.out.println("Digite o nome do aluno que deseja retornar");
@@ -39,12 +37,11 @@ class ManterAluno {
 
         System.out.println("Nome: " + aluno_retornado.getNome());
         System.out.println("RG: " + aluno_retornado.getRg());
-
     }
 
-    void editaAluno(){
+    void editaAluno(FacadeAlunoController alunoController){
 
-        FacadeAlunoController alunoController = new ManterAlunoController();
+
 
         String rg;
         String novo_nome;
@@ -62,12 +59,11 @@ class ManterAluno {
         aluno_atualizado.setRg(aluno_retornado.getRg());
 
         alunoController.editar_aluno(rg, aluno_atualizado);
-
     }
 
-    void deletaAluno(){
+    void deletaAluno(FacadeAlunoController alunoController){
 
-        FacadeAlunoController alunoController = new ManterAlunoController();
+
 
         String rg;
         System.out.println("Digite o RG do aluno que deseja deletar");

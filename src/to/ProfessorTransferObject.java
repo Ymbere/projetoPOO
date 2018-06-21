@@ -10,5 +10,5 @@ public class ProfessorTransferObject extends PessoaTransferObject {
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
-
+    
 }

@@ -7,10 +7,11 @@ import view.FacadeAlunoController;
 import to.AlunoTransferObject;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class ManterAlunoController implements FacadeAlunoController {
 
-    private FacadeManterAlunoDataAccessObject dao = new ManterAlunoBanco();
+    private FacadeManterAlunoDataAccessObject dao = new ManterAlunoDataAccessObject();
 
     @Override
     public void cadastrar_aluno(AlunoTransferObject alunoTO) {
@@ -54,6 +55,16 @@ public class ManterAlunoController implements FacadeAlunoController {
         try{
             return dao.retornaPorRg(rg_aluno);
         }catch (SQLException e){
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    public ArrayList<AlunoTransferObject> retornaAlunos() {
+        try {
+            return dao.retornaAlunos();
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return null;

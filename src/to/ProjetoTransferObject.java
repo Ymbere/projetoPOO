@@ -52,5 +52,4 @@ public class ProjetoTransferObject implements Comparable<ProjetoTransferObject> 
         }
         return 0;
     }
-
 }

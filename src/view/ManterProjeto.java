@@ -10,14 +10,8 @@ import java.util.Scanner;
 class ManterProjeto {
     private Scanner ler = new Scanner(System.in);
 
-    void cadastrarProjeto(){
-
-        FacadeProfessorController professorController = new ManterProfessorController();
-
-        FacadeAlunoController alunoController = new ManterAlunoController();
-
-        FacadeProjetoController manterProjetoController = new ManterProjetoController();
-
+    void cadastrarProjeto(FacadeProfessorController professorController, FacadeAlunoController alunoController,
+                          FacadeProjetoController manterProjetoController){
 
         String projeoTitulo;
         String resumo;
@@ -39,12 +33,10 @@ class ManterProjeto {
         projeto.setOrientado(alunoController.retorna_aluno(orientado));
 
         manterProjetoController.cadastrarProjeto(projeto);
-
     }
 
-    void retornarProjeto(){
+    void retornarProjeto(FacadeProjetoController manterProjetoController){
 
-        FacadeProjetoController manterProjetoController = new ManterProjetoController();
 
         System.out.println("$$$$$$$$$$$$$$$$$$$ Relatorio de projetos $$$$$$$$$$$$$$$$$$$");
 
@@ -92,18 +84,11 @@ class ManterProjeto {
             }
 
             System.out.println("########################################################");
-
         }
     }
 
-    void atualizaProjeto(){
-
-        FacadeProfessorController professorController = new ManterProfessorController();
-
-        FacadeAlunoController alunoController = new ManterAlunoController();
-
-        FacadeProjetoController manterProjetoController = new ManterProjetoController();
-
+    void atualizaProjeto(FacadeProfessorController professorController, FacadeAlunoController alunoController,
+                         FacadeProjetoController manterProjetoController){
 
 
         String titulo;
@@ -133,12 +118,10 @@ class ManterProjeto {
         projeto.setOrientado(alunoController.retorna_aluno(orientado));
 
         manterProjetoController.editarProjeto(titulo, projeto);
-
     }
 
-    void deletaProjeto(){
+    void deletaProjeto(FacadeProjetoController manterProjetoController){
 
-        FacadeProjetoController manterProjetoController = new ManterProjetoController();
 
         String titulo;
         System.out.println("Digite o titulo do projeto que deseja deletar");

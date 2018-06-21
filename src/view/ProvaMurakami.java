@@ -4,10 +4,8 @@ import controller.ManterAlunoController;
 import controller.ManterProfessorController;
 import controller.ManterProjetoController;
 import populabanco.*;
-
-
-
 import java.util.Scanner;
+import view_grafica.Menu_principal;
 
 public class ProvaMurakami {
 
@@ -15,25 +13,24 @@ public class ProvaMurakami {
 
     public static void main(String[] args){
         //Tudo o que vier aqui é dependencia
-
+        
+  
         Scanner ler = new Scanner(System.in);
         int opcao;
         ManterProjeto projeto = new ManterProjeto();
         ManterAluno aluno = new ManterAluno();
         ManterProfessor professor = new ManterProfessor();
-
+        
         FacadeProfessorController manterProfessorController = new ManterProfessorController();
 
         FacadeAlunoController manterAlunoController = new ManterAlunoController();
 
         FacadeProjetoController manterProjetoController = new ManterProjetoController();
 
-
         new PopulaAluno(manterAlunoController);
         new PopulaProfessor(manterProfessorController);
         new PopulaProjetoTeste(manterProjetoController,manterProfessorController,manterAlunoController);
-
-
+       
         do {
             System.out.println("Digite apcao desejada");
             System.out.println("1 - Cadastrar Projeto");
@@ -52,44 +49,43 @@ public class ProvaMurakami {
             opcao = ler.nextInt();
             switch (opcao){
                 case 1:
-                    projeto.cadastrarProjeto();
+                    projeto.cadastrarProjeto(manterProfessorController,manterAlunoController,manterProjetoController);
                     break;
                 case 2:
-                    projeto.retornarProjeto();
+                    projeto.retornarProjeto(manterProjetoController);
                     break;
                 case 3:
-                    projeto.atualizaProjeto();
+                    projeto.atualizaProjeto(manterProfessorController,manterAlunoController,manterProjetoController);
                     break;
                 case 4:
-                    projeto.deletaProjeto();
+                    projeto.deletaProjeto(manterProjetoController);
                     break;
                 case 5:
-                    aluno.cadastraAluno();
+                    aluno.cadastraAluno(manterAlunoController);
                     break;
                 case 6:
-                    aluno.retornaAluno();
+                    aluno.retornaAluno(manterAlunoController);
                     break;
                 case 7:
-                    aluno.editaAluno();
+                    aluno.editaAluno(manterAlunoController);
                     break;
                 case 8:
-                    aluno.deletaAluno();
+                    aluno.deletaAluno(manterAlunoController);
                     break;
                 case 9:
-                    professor.cadastraProfessor();
+                    professor.cadastraProfessor(manterProfessorController);
                     break;
                 case 10:
-                    professor.retornaProfessor();
+                    professor.retornaProfessor(manterProfessorController);
                     break;
                 case 11:
-                    professor.editaProfessor();
+                    professor.editaProfessor(manterProfessorController);
                     break;
                 case 12:
-                    professor.deletaProfessor();
+                    professor.deletaProfessor(manterProfessorController);
                     break;
             }
         }while (opcao != 13);
-
 
     }
 }

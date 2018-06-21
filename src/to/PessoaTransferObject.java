@@ -18,5 +18,5 @@ abstract class PessoaTransferObject {
 
     public String getRg() {
         return rg;
-    }
+    } 
 }

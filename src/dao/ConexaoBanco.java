@@ -7,7 +7,6 @@ class ConexaoBanco {
 
     private Connection conexao=null;
 
-
     private Connection getConnection(String url){
         try {
             Class.forName("org.postgresql.Driver");
@@ -33,6 +32,5 @@ class ConexaoBanco {
         String url = "jdbc:postgresql://localhost/ProvaMurakami";
         return getConnection(url);
     }
-
 
 }

@@ -5,6 +5,8 @@ import to.ProfessorTransferObject;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Iterator;
 
 public class ManterProfessorDataAccessObject implements FacadeManterProfessorDataAccessObject {
@@ -42,17 +44,34 @@ public class ManterProfessorDataAccessObject implements FacadeManterProfessorDat
             }
         }
         return retorno;
-
     }
 
     @Override
-    public void deletaProfessor(String rg_professor) throws SQLException {
-
+    public void deletaProfessor(String rg_professor) throws SQLException {  
+        for(ProfessorTransferObject professor: professorList){
+            if(professor.getRg().equals(rg_professor)){
+                professorList.remove(professor);
+                break;
+            }
+        }            
     }
 
     @Override
     public void atualizaProfessor(String rg_professor, ProfessorTransferObject professorTO) throws SQLException {
+        int index = 0;
+        for(ProfessorTransferObject professor: professorList){
+            if(professor.getRg().equals(rg_professor)){
+                professorList.get(index).setNome(professorTO.getNome());
+                professorList.get(index).setRg(professorTO.getRg());
+                professorList.get(index).setTitulo(professorTO.getTitulo());
+            }
+            index++;
+        }
+    }
 
+    @Override
+    public ArrayList<ProfessorTransferObject> retornaProfessores() throws SQLException { 
+        return professorList;
     }
 
 }

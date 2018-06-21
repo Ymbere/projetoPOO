@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class ManterProfessorBanco implements FacadeManterProfessorDataAccessObject {
 
@@ -24,7 +25,6 @@ public class ManterProfessorBanco implements FacadeManterProfessorDataAccessObje
         preparedStatement.setString(3,professorTO.getTitulo());
         preparedStatement.execute();
         preparedStatement.close();
-
     }
 
     @Override
@@ -46,7 +46,6 @@ public class ManterProfessorBanco implements FacadeManterProfessorDataAccessObje
         preparedStatement.close();
 
         return professorTransferObject;
-
     }
 
     @Override
@@ -95,6 +94,28 @@ public class ManterProfessorBanco implements FacadeManterProfessorDataAccessObje
         preparedStatement.setString(3,rg_professor);
         preparedStatement.execute();
         preparedStatement.close();
+    }
 
+    @Override
+    public ArrayList<ProfessorTransferObject> retornaProfessores() throws SQLException {
+        Connection connection = conexaoBanco.getConnection();
+        String sql;
+        sql = "SELECT * FROM professor ORDER BY rg ASC;";
+        PreparedStatement preparedStatement;
+        preparedStatement = connection.prepareStatement(sql);
+        ResultSet resultSet = preparedStatement.executeQuery();
+        ArrayList<ProfessorTransferObject> ProfessortransferObjects = new ArrayList<>();
+        
+        while (resultSet.next()) {
+            ProfessorTransferObject professorTransferObject = new ProfessorTransferObject();
+            professorTransferObject.setNome(resultSet.getString("nome"));
+            professorTransferObject.setRg(resultSet.getString("rg"));
+            professorTransferObject.setTitulo(resultSet.getString("titulo"));
+            ProfessortransferObjects.add(professorTransferObject);            
+        }
+        
+        preparedStatement.close();
+        
+        return ProfessortransferObjects;      
     }
 }

@@ -42,17 +42,33 @@ public class ManterAlunoDataAccessObject implements FacadeManterAlunoDataAccessO
             }
         }
         return retorno;
-
     }
 
     @Override
     public void deletarAluno(String rg_aluno) throws SQLException {
-
+        for(AlunoTransferObject aluno: alunosList){
+            if(aluno.getRg().equals(rg_aluno)){
+                alunosList.remove(aluno);
+                break;
+            }            
+        }    
     }
 
     @Override
     public void atualizarAluno(String rg_aluno, AlunoTransferObject alunoTO) throws SQLException {
+        int index = 0;
+        for(AlunoTransferObject aluno: alunosList){
+            if(aluno.getRg().equals(rg_aluno)){
+                alunosList.get(index).setNome(alunoTO.getNome());
+                alunosList.get(index).setRg(alunoTO.getRg());
+            }
+            index++;
+        }
+    }
 
+    @Override
+    public ArrayList<AlunoTransferObject> retornaAlunos() throws SQLException {
+        return alunosList;
     }
 
 }
